@@ -1,1 +1,2 @@
-# ByteHackz-2023-Discord-Bot
+# bytehackz-discord-bot
+A discord bot for bytehackz
