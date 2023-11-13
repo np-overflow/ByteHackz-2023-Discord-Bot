@@ -63,10 +63,10 @@ class BytehackzBot(Snake):
     async def help(self, ctx: InteractionContext):
         embed = Embed(
             "ByteHackz",
-            "text",
+            "Click on `Queue up` button to to join! You will receive a dm from the bot when it's your turn.",
             color="#F9AC42",
         )
-        embed.add_field("topic1", "value")
+        embed.add_field("Bot 2", "Try chatting and discover the fun features that the bot has!")
         await ctx.send(embeds=[embed])
 
     async def on_command_error(self, source: str, error: Exception, *args, **kwargs) -> None:
