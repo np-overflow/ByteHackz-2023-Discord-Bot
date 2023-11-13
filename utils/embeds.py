@@ -9,7 +9,7 @@ NERF_GUN = Embed(
             At the end of the day, teams with the highest scores get a special prize! 👀\n\n\
             We're located south of the Green Patch, queue up with the bot and we'll ping ya when you can come! 📍",
     color="#F9AC42",
-    footer="*no actual weapons lah, just nerf guns\n\nAll blasters provided by Mr Ben, thank you!!",
+    footer="*no actual weapons lah, just **modded** nerf guns\n\nAll blasters provided by Mr Ben, thank you!!",
     image="https://user-images.githubusercontent.com/53942938/201475486-cf07e0eb-0d51-4ef4-9657-079b62698a8e.png",
 )
 """ NERF_GUN.add_field(
