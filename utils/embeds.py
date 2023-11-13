@@ -47,7 +47,7 @@ GENIUS_BAR = Embed(
 
 CONSOLE = Embed(
     "Console Games 🎮",
-    "Youre strssed and you really want a break.\n\n\
+    "Youre stressed and you really want a break.\n\n\
      Dont worry, we got you covered.\n\n\
      Come Play our state of the art **Nintendo Switch** provided by Dr Joel 🤗\n\n\
      We have games such as Arms, Overcooked and Mario Kart. Come yourself or with another fellow human\n\n\n\
