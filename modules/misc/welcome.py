@@ -42,7 +42,7 @@ class Welcome(Scale):
                 Button(
                     style=ButtonStyles.BLURPLE,
                     label="Claim Role",
-                    emoji="😀",
+                    emoji=":overflow:",
                     custom_id="claimRole",
                 )
             ],
@@ -52,7 +52,7 @@ class Welcome(Scale):
     async def claimRole(self, ctx):
 
         guild = await self.bot.get_guild(GUILD)
-        role = get(guild.roles, name="ByteHackz Participant")
+        role = get(guild.roles, name="Byte®Hackz Participants")
         if (ctx.author.has_role(role)):
             await ctx.send("Already Claimed Role", ephemeral=True)
         else:
