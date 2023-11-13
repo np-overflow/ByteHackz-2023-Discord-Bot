@@ -47,11 +47,11 @@ GENIUS_BAR = Embed(
 
 CONSOLE = Embed(
     "Console Games 🎮",
-    "Youre stressed and you really want a break.\n\n\
-     Dont worry, we got you covered.\n\n\
+    "You're stressed and you really want a break.\n\n\
+     Don't worry, we got you covered.\n\n\
      Come Play our state of the art **Nintendo Switch** provided by Dr Joel 🤗\n\n\
-     We have games such as Arms, Overcooked and Mario Kart. Come yourself or with another fellow human\n\n\n\
-    What are you waiting for? Queue now!",
+     We have games such as Arms, Overcooked and Mario Kart. Come by yourself or with another fellow human\n\n\n\
+    What are you waiting for? Queue up now!",
     color="#F9AC42",
     footer="",
     image="https://user-images.githubusercontent.com/53942938/201475560-053db941-b8f3-4240-96ba-376518166549.png",
@@ -60,7 +60,7 @@ CONSOLE = Embed(
 
 CSGO = Embed(
     "CSGO 🔫",
-    "Want to show of your FPS skills?\n\n\
+    "Want to show off your FPS skills?\n\n\
      Come and play with your team against another 5 vs 5\n\n\
      **Do note that all players must have the game installed**\n\n\
      Game will last a maximum of 16 rounds, Winning team gets a prize 🏆\n\n\n\
