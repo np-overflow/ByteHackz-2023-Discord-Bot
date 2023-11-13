@@ -1,38 +1,36 @@
-# fly.toml file generated for bytehackz-2022-bot on 2022-11-07T06:48:48Z
+# fly.toml app configuration file generated for bytehackz2023bot on 2023-11-13T15:55:01+08:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
 
-app = "bytehackz-2022-bot"
+app = "bytehackz2023bot"
+primary_region = "sin"
 kill_signal = "SIGINT"
-kill_timeout = 5
-processes = []
-
-# For some reason this does not work
-# So all env vars are set in secrets
-
-[env]
-  MAX_TICKETS = 5
-  LOGGING_LEVEL = 10
+kill_timeout = "5s"
 
 [experimental]
-  allowed_public_ports = []
   auto_rollback = true
 
+[build]
+
+[env]
+  LOGGING_LEVEL = "10"
+  MAX_TICKETS = "5"
+
 [[services]]
-  http_checks = []
-  tcp_checks = []
+  protocol = "tcp"
   internal_port = 8080
   processes = ["app"]
-  protocol = "tcp"
-  script_checks = []
+
+  [[services.ports]]
+    port = 80
+    handlers = ["http"]
+    force_https = true
+
+  [[services.ports]]
+    port = 443
+    handlers = ["tls", "http"]
   [services.concurrency]
+    type = "connections"
     hard_limit = 25
     soft_limit = 20
-    type = "connections"
-
-  [[services.ports]]
-    force_https = true
-    handlers = ["http"]
-    port = 80
-
-  [[services.ports]]
-    handlers = ["tls", "http"]
-    port = 443

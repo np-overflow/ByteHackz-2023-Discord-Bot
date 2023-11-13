@@ -219,7 +219,7 @@ class Nerfgun(Scale):
             "Nerf R' Us 🔫 **Leaderboard**",
             "Ranked by score:\n\n",
             color="#F9AC42",
-            image="https://user-images.githubusercontent.com/53942938/200157862-45c1095d-0ea7-48c9-9566-5f5f11318e99.png",
+            image="https://media.discordapp.net/attachments/1169297244500009022/1171721535040524339/bytehackz2023logo.jpg?ex=655db5b7&is=654b40b7&hm=1bbffac59c047ff2ce37ead33000585b11760f5dbc81fac42cbff7ec0fe91e93&=&width=1266&height=609",
         )
 
         if len(aggregated_scores) >= 1:
