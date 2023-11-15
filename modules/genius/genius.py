@@ -228,6 +228,7 @@ class GeniusBar(Scale):
         guild = await self.bot.get_guild(GUILD)
 
         everyone_role_id = guild.default_role.id
+        admin_role_id = ADMIN_ROLE  # Convert ADMIN_ROLE to Snowflake ID
 
         cat = await guild.create_category(
             f"ticket-{userName}",
@@ -240,6 +241,14 @@ class GeniusBar(Scale):
                 deny="1024",
                 allow="0"
             ))
+        
+        await cat.edit_permission(
+        PermissionOverwrite(
+            id=admin_role_id,  # Allow ADMIN_ROLE to access the ticket
+            type=0,
+            allow="1024",
+            deny="0"
+        ))
 
         await cat.edit_permission(
             PermissionOverwrite(

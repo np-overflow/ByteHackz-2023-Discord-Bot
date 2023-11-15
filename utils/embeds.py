@@ -39,7 +39,7 @@ GENIUS_BAR = Embed(
             Maybe its the fact that the services you're planning to use are incompaitable, or that Python 2.9 just won't cut it.\n\n\
             That's where the Techies over at the **Genius Bar** come into play!\n\n\
             These guys here have great experience and can offer valuable feedback and suggestions on how you can get your prototype up and running\n\n\n\
-            To book a session, just click the button below! 👇",
+            To book a session, just click the button below and come down to **__27-05-05__**! 👇",
     color="#F9AC42",
     footer="🧠",
     image="https://cdn.discordapp.com/attachments/1169297244500009022/1171721535040524339/bytehackz2023logo.jpg?ex=655db5b7&is=654b40b7&hm=1bbffac59c047ff2ce37ead33000585b11760f5dbc81fac42cbff7ec0fe91e93&",
