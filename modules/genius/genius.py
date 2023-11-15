@@ -109,6 +109,13 @@ class GeniusBar(Scale):
         )
 
         await ctx.send(f"{user.mention} has been added to this support ticket!")
+        
+    @slash_command(
+        name="genius_count",
+        description="Total number of active genius tickets open")
+    async def genius_count(self, ctx):
+        count = len(self.genius.occupied.values())
+        await ctx.send(f"Total number of active tickets right now is {count}")
 
     async def setup_channel(self, channel):
         await channel.purge()
@@ -243,12 +250,12 @@ class GeniusBar(Scale):
             ))
         
         await cat.edit_permission(
-        PermissionOverwrite(
-            id=admin_role_id,  # Allow ADMIN_ROLE to access the ticket
-            type=0,
-            allow="1024",
-            deny="0"
-        ))
+            PermissionOverwrite(
+                id=admin_role_id,  # Allow ADMIN_ROLE to access the ticket
+                type=0,
+                allow="1024",
+                deny="0"
+            ))
 
         await cat.edit_permission(
             PermissionOverwrite(
